@@ -27,9 +27,17 @@ def is_err(response):
 
 
 def test_should_return_lyrics_for_known_good():
+    """ The API might pull from different sources: sometimes I received a site
+        attribution in the lyrics. Checking for a snippet of the lyrics as
+        opposed to whole equality is better in this case. For example, see the
+        difference in the responses between 'curl_examples.png' and
+        'curl_problematic.png'.
+
+    """
+
     artist = "Lisa Loeb"
     title = "I Do"
-    assert "When I'm done with" in get_lyrics(artist, title)
+    assert "when i'm done with thinking" in get_lyrics(artist, title).lower()
 
 
 def test_should_return_error_for_known_bad():
