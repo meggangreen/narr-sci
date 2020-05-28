@@ -1,3 +1,22 @@
+# About the Repo
+I applied to be a SDET and submitted this solution to the coding challenge.
+
+The first part of the challenge was to test a 3rd-party API. I found this part
+to be particularly straight-forward owing to limited previous experience and 
+good Python documentation.
+- [lyrics_api.py](https://github.com/meggangreen/narr-sci/blob/master/lyrics_api.py)
+
+The second part of the challenge was to "write a Selenium test that goes to NS 
+homepage and navigates the site to find the patents we have. The test should 
+check that the following patents (8,630,844 & 9,576,009) are listed on the About 
+Us page. Please use the page object model." I knew what Selenium was, but had 
+never used it or the page object model. The Selenium docs are excellent.
+- I first executed the task without the page object model, so that I could
+understand the essentials: [ns_selenium.py](https://github.com/meggangreen/narr-sci/blob/master/ns_selenium.py)
+- I then executed the full task: [page.py](https://github.com/meggangreen/narr-sci/blob/master/page.py) and [selenium_proj.py](https://github.com/meggangreen/narr-sci/blob/master/selenium_proj.py)
+
+Everything below this point was part of my original submission.
+
 # About Me
 As I stated in my cover letter, I've only recently discovered how interesting
 I find testing to be. I'm looking for my first position in Test as a Junior
